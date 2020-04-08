@@ -1,0 +1,31 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Juggling
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+      <p>
+        If you have an ability to juggle, you may want to apply for licence to juggle.
+      </p>
+
+      <p>
+        The minimum level of skill is the ability to juggle more than 2 balls.
+      </p>
+
+      <h2 class="govuk-heading-m">Juggling licence</h2>
+
+      <p>To apply, go to <a href="http://localhost:3000/start">Apply for a juggling licence</a>.
+      </p>
+    </div>
+  </div>
+
+{% endblock %}
